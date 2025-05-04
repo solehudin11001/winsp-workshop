@@ -11,13 +11,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Istok+Web:ital@0;1&display=swap"
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <!-- Header -->
+    <header class="global-header">
+      <div class="container">
+        <div class="global-header__inner">
+          <div class="global-header__wrap">
+            <a href="#" class="logo">
+              <span class="logo__oblique">W</span>Insp
+            </a>
+            <button
+              type="button"
+              id="button-menu"
+              aria-expanded="false"
+              aria-haspopup="menu"
+              aria-label="Open menu"
+            >
+              <span class="icon icon--menu"></span>
+            </button>
+          </div>
+          <nav class="main-nav collapse" id="menu">
+            <ul class="main-nav__menu">
+              <li><a href="#" class="main-nav__link">Beranda</a></li>
+              <li><a href="#tentang" class="main-nav__link">Tentang</a></li>
+              <li><a href="#program" class="main-nav__link">Program</a></li>
+              <li><a href="#testimoni" class="main-nav__link">Testimoni</a></li>
+              <li class="main-nav__item">
+                <a href="#" class="button button--theme-dark" role="button"
+                  >Daftar Sekarang</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="main-nav__cta">
+            <a href="#" class="button button--theme-dark" role="button"
+              >Daftar Sekarang</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
