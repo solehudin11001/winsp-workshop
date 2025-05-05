@@ -283,7 +283,7 @@ img {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    margin-top: -192px;
+    margin-top: -200px;
     padding-top: 0;
   }
 
@@ -319,7 +319,7 @@ img {
   }
 
   .section--flex {
-    margin-top: -202px;
+    margin-top: -216px;
     padding-top: 0;
   }
 
@@ -375,4 +375,16 @@ img {
   object-fit: contain;
   height: 24px;
   width: 24px;
+}
+
+@media (min-width: 1024px) {
+  .partnership {
+    margin-top: 56px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .partnership {
+    margin-top: 64px;
+  }
 }
