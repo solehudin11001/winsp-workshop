@@ -43,6 +43,9 @@ export default function Footer() {
             <form className="footer__form">
               <input
                 type="email"
+                name="email"
+                id="email"
+                autoComplete="off"
                 placeholder="Email"
                 className="footer__input"
               />

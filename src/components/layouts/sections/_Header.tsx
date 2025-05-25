@@ -4,7 +4,7 @@ import Support from "./_Support";
 
 export default function Header() {
   return (
-    <section className="section">
+    <section className="section" id="top">
       <div className="section__copy">
         <h1 className="title title--large">
           <span className="title__oblique">W</span>Insp Workshop Inspiratif di

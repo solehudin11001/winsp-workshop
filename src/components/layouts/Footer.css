@@ -11,12 +11,14 @@
   margin: 0 24px;
 }
 
-.footer__inner .logo {
+.footer__inner .logo,
+.footer__link {
   align-self: flex-start;
 }
 
 .footer__wrap,
-.footer__list {
+.footer__list,
+.footer__footer {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -36,19 +38,17 @@
   line-height: 20px;
 }
 
-.footer__link {
-  align-self: flex-start;
-}
-
 .footer__link:hover {
   color: var(--primary);
 }
 
 .footer__footer {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
   justify-content: space-between;
+}
+
+.footer__footer span {
+  font-size: 12px;
+  line-height: 20px;
 }
 
 .footer__form {
@@ -59,7 +59,7 @@
 }
 
 .footer__input {
-  border: 1px solid var(--primary);
+  border: 1px solid var(--secondary);
   border-radius: 6px;
   color: var(--foreground);
   max-width: 100%;
@@ -72,13 +72,15 @@
 }
 
 .footer__error {
+  background-color: var(--background);
   color: #f2637e;
   display: none;
   font-size: 12px;
   line-height: 20px;
+  padding: 2px 4px;
   position: absolute;
-  bottom: -24px;
-  left: 0;
+  left: 16px;
+  top: -10px;
 }
 
 .footer__input:invalid ~ .footer__error {
@@ -86,7 +88,8 @@
 }
 
 .footer__button {
-  background-color: var(--primary);
+  background-color: var(--secondary);
+  border: 1px solid var(--secondary);
   border-radius: 6px;
   color: var(--background);
   font: inherit;
@@ -95,8 +98,7 @@
 
 .footer__button:hover {
   background-color: transparent;
-  color: var(--primary);
-  outline: 1px solid var(--primary);
+  color: var(--secondary);
 }
 
 @media only screen and (min-width: 1024px) {

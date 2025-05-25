@@ -4,7 +4,8 @@
 }
 
 .card--primary {
-  background-image: linear-gradient(rgba(214, 226, 251, 42), var(--background));
+  background-image: url("../assets/card-background.png"),
+    linear-gradient(rgba(214, 226, 251, 42), var(--background));
   border: 1px solid var(--accent);
   border-radius: 6px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
