@@ -1,0 +1,128 @@
+.footer {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 64px 0 32px;
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 24px;
+}
+
+.footer__inner .logo {
+  align-self: flex-start;
+}
+
+.footer__wrap,
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__item:first-child {
+  max-width: 240px;
+}
+
+.footer__item--distance span {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.footer__link {
+  align-self: flex-start;
+}
+
+.footer__link:hover {
+  color: var(--primary);
+}
+
+.footer__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.footer__form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  position: relative;
+}
+
+.footer__input {
+  border: 1px solid var(--primary);
+  border-radius: 6px;
+  color: var(--foreground);
+  max-width: 100%;
+  padding: 8px 16px;
+}
+
+.footer__input:invalid {
+  border-color: #f2637e;
+  outline: 2px solid rgba(242, 99, 126, 0.32);
+}
+
+.footer__error {
+  color: #f2637e;
+  display: none;
+  font-size: 12px;
+  line-height: 20px;
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+}
+
+.footer__input:invalid ~ .footer__error {
+  display: block;
+}
+
+.footer__button {
+  background-color: var(--primary);
+  border-radius: 6px;
+  color: var(--background);
+  font: inherit;
+  padding: 8px 16px;
+}
+
+.footer__button:hover {
+  background-color: transparent;
+  color: var(--primary);
+  outline: 1px solid var(--primary);
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer__inner {
+    margin: 0 40px;
+  }
+
+  .footer__wrap {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__list {
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer__inner {
+    margin: 0 auto;
+    max-width: 1110px;
+  }
+
+  .footer__list {
+    flex-direction: row;
+    gap: 40px;
+  }
+}

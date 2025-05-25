@@ -1,0 +1,69 @@
+:root {
+  --background: #ffffff;
+  --foreground: #373740;
+  --primary: #3f44a6;
+  --secondary: #262626;
+  --accent: #f2f2f2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: "Istok Web", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+}
+
+button {
+  appearance: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+img,
+svg {
+  vertical-align: middle;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input {
+  appearance: none;
+  border: none;
+  font: inherit;
+  outline: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

@@ -1,0 +1,160 @@
+.main {
+  margin: 0 24px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding: 64px 0;
+}
+
+.section--center {
+  align-items: center;
+}
+
+.section--theme-pale-blue {
+  background-color: var(--accent);
+  border-radius: 6px;
+  margin: 64px 0;
+  padding: 48px;
+}
+
+.section__copy {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 514px;
+}
+
+.section__copy--center {
+  align-items: center;
+  gap: 16px;
+  max-width: 561px;
+  text-align: center;
+}
+
+.title {
+  color: var(--secondary);
+  font-weight: 400;
+}
+
+.title__oblique {
+  font-style: italic;
+}
+
+.title--large {
+  font-size: 30px;
+  line-height: 36px;
+  max-width: 327px;
+}
+
+.title--medium {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.section__copy--cta {
+  max-width: 100%;
+}
+
+.section__copy--cta .title--large {
+  max-width: 100%;
+}
+
+.section__copy--cta p {
+  max-width: 561px;
+}
+
+.section__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .title--large {
+    font-size: 36px;
+    line-height: 42px;
+    max-width: 450px;
+  }
+
+  .title--medium {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .section__copy--cta .title--large {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .main {
+    margin: 0 40px;
+  }
+
+  .section--theme-pale-blue {
+    padding: 56px;
+  }
+
+  .title--large {
+    font-size: 40px;
+    line-height: 46px;
+    max-width: 472px;
+  }
+
+  .title--medium {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .section__copy--cta .title--large {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .main {
+    margin: 0 auto;
+    max-width: 1110px;
+  }
+
+  .section--theme-pale-blue {
+    padding: 64px;
+  }
+
+  .section__copy:not(.section__copy--center) {
+    max-width: 100%;
+  }
+
+  .section__copy:not(.section__copy--center) p {
+    max-width: 514px;
+  }
+
+  .title--large {
+    font-size: 48px;
+    line-height: 48px;
+    max-width: 575px;
+  }
+
+  .section__copy--cta .title--large {
+    max-width: 100%;
+  }
+
+  .section__wrap--stack::after,
+  .section__wrap--stack::before {
+    content: "";
+    width: 296px;
+  }
+
+  .section__wrap--stack::after {
+    order: 1;
+  }
+
+  .section__wrap--stack::before {
+    order: 2;
+  }
+}
